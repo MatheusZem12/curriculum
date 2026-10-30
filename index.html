@@ -182,6 +182,10 @@
   @media (max-width: 700px) { .projects-grid { grid-template-columns: 1fr; } }
   .projects-grid .card { margin-bottom: 0; display: flex; flex-direction: column; }
   .projects-grid .proj-tags { margin-top: auto; padding-top: 12px; }
+  .projects-grid .card { overflow: hidden; }
+  .card .thumb { display: block; margin: -24px -26px 18px; line-height: 0; background: var(--shot-bg); border-bottom: 1px solid var(--border); transition: opacity .15s ease; }
+  .card .thumb:hover { opacity: .85; }
+  .card .thumb img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top left; }
 
   .skills-group { margin-bottom: 18px; }
   .skills-group:last-child { margin-bottom: 0; }
@@ -344,18 +348,22 @@
       <div class="shot-hint">clique nas imagens para ampliar</div>
       <div class="projects-grid">
         <div class="card">
+          <a class="thumb" href="assets/monitorame.png" target="_blank" rel="noopener"><img src="assets/monitorame.png" alt="Monitorame" loading="lazy"></a>
           <p><strong>Monitorame</strong> · TCC (código privado): monitoramento da cadeia de frio. Unidades ESP32 com sensores de temperatura, umidade e GPS enviam leituras por MQTT; o sistema acompanha veículos, remessas e motoristas em mapa em tempo real, com rotas (OSRM), geofence e cadastro em lote por planilha.</p>
           <div class="proj-tags"><span>Java</span><span>Spring Boot</span><span>Angular</span><span>PostgreSQL</span><span>MQTT</span><span>ESP32</span><span>Playwright</span></div>
         </div>
         <div class="card">
+          <a class="thumb" href="assets/lexiquest.png" target="_blank" rel="noopener"><img src="assets/lexiquest.png" alt="Lexiquest" loading="lazy"></a>
           <p><strong>Lexiquest</strong> · código privado: plataforma de estudo de idiomas em que o próprio assistente de IA do usuário (Claude, ChatGPT) é o professor, conectado por um servidor MCP. O servidor guarda os prompts, os schemas e a validação; o painel web mostra a evolução de cada palavra.</p>
           <div class="proj-tags"><span>Java 21</span><span>Spring Boot 3</span><span>PostgreSQL</span><span>React</span><span>MCP</span><span>Testcontainers</span></div>
         </div>
         <div class="card">
+          <a class="thumb" href="assets/ceres.png" target="_blank" rel="noopener"><img src="assets/ceres.png" alt="Ceres" loading="lazy"></a>
           <p><strong>Ceres</strong> · em desenvolvimento (código privado): plataforma para o agro que reúne lavoura, pecuária, satélite e IoT sobre um mapa vivo da fazenda, com desenho de talhões e cálculo de área.</p>
           <div class="proj-tags"><span>Java</span><span>Spring Boot</span><span>Next.js</span><span>PostGIS</span><span>TimescaleDB</span><span>Redis</span></div>
         </div>
         <div class="card">
+          <a class="thumb" href="assets/foreman.jpg" target="_blank" rel="noopener"><img src="assets/foreman.jpg" alt="Foreman" loading="lazy"></a>
           <p><strong>Foreman</strong> · <a href="https://github.com/MatheusZem12/foreman" target="_blank" rel="noopener">público no GitHub</a>: gerenciador de tarefas auto-hospedado em que as issues são executadas por agentes de código (Claude Code, Codex), cada uma em uma worktree git isolada, com regras de fluxo, permissões por etapa e análise de custos.</p>
           <div class="proj-tags"><span>Go</span><span>PostgreSQL</span><span>React</span><span>TypeScript</span><span>Docker</span></div>
         </div>
@@ -419,18 +427,22 @@
       <div class="shot-hint">click the images to enlarge</div>
       <div class="projects-grid">
         <div class="card">
+          <a class="thumb" href="assets/foreman.jpg" target="_blank" rel="noopener"><img src="assets/foreman.jpg" alt="Foreman" loading="lazy"></a>
           <p><strong>Foreman</strong> · <a href="https://github.com/MatheusZem12/foreman" target="_blank" rel="noopener">public on GitHub</a>: self-hosted issue tracker whose issues are carried out by coding agents (Claude Code, Codex). Each run works in an isolated git worktree, with multi-repository merges that publish all or nothing, a workflow rule engine, per-stage permissions and cost analytics.</p>
           <div class="proj-tags"><span>Go</span><span>PostgreSQL</span><span>React</span><span>TypeScript</span><span>Tailwind</span><span>Docker</span></div>
         </div>
         <div class="card">
+          <a class="thumb" href="assets/lexiquest.png" target="_blank" rel="noopener"><img src="assets/lexiquest.png" alt="Lexiquest" loading="lazy"></a>
           <p><strong>Lexiquest</strong> · private: language learning platform — a React dashboard plus an MCP server so each user's own AI assistant (Claude, ChatGPT) runs conversations, grades skills from 0 to 100 and grows the vocabulary, while the server keeps the prompts, schemas and validation.</p>
           <div class="proj-tags"><span>Java 21</span><span>Spring Boot 3</span><span>PostgreSQL</span><span>React</span><span>MCP</span><span>Testcontainers</span><span>Playwright</span></div>
         </div>
         <div class="card">
+          <a class="thumb" href="assets/monitorame.png" target="_blank" rel="noopener"><img src="assets/monitorame.png" alt="Monitorame" loading="lazy"></a>
           <p><strong>Monitorame</strong> · capstone project (private code): cold-chain monitoring. ESP32 units with temperature, humidity and GPS sensors report over MQTT, and the system tracks vehicles, shipments and drivers on a real-time map with street-level routing (OSRM), geofences and spreadsheet bulk import.</p>
           <div class="proj-tags"><span>Java</span><span>Spring Boot</span><span>Angular</span><span>PostgreSQL</span><span>MQTT</span><span>ESP32</span><span>Playwright</span></div>
         </div>
         <div class="card">
+          <a class="thumb" href="assets/ceres.png" target="_blank" rel="noopener"><img src="assets/ceres.png" alt="Ceres" loading="lazy"></a>
           <p><strong>Ceres</strong> · in development (private code): agribusiness platform that brings crops, livestock, satellite and IoT data together on a live map of the farm, with field drawing and area measurement.</p>
           <div class="proj-tags"><span>Java</span><span>Spring Boot</span><span>Next.js</span><span>PostGIS</span><span>TimescaleDB</span><span>Redis</span></div>
         </div>
